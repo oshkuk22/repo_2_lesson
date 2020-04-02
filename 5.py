@@ -18,13 +18,19 @@ while flag:
     except ValueError:
         print('Entered items_list is not a number or not a integer!!!')
 i = 0
+flag_min = False
 
-while i <= len(my_list):
+
+while i < len(my_list):
     if rat_val > my_list[i]:
         my_list.insert(i, rat_val)
+        flag_min = True
         break
     else:
         i += 1
+
+if not flag_min:
+    my_list.insert(i, rat_val)
 
 print(my_list)
 
