@@ -90,7 +90,7 @@ for j_tuple in product_list:
     stat_dict['number of product'] = count_list
     stat_dict['measure unit'] = unit_list
 
-print (stat_dict)
+print(stat_dict)
 
 
 
